@@ -1,0 +1,21 @@
+//
+//  IWWeiBo.pch
+//  SInaWeiBo
+//
+//  Created by 张瑜 on 15/11/15.
+//  Copyright (c) 2015年 张瑜. All rights reserved.
+//
+
+#ifndef SInaWeiBo_IWWeiBo_pch
+#define SInaWeiBo_IWWeiBo_pch
+
+
+// 自定义log
+#ifdef DEBUG
+#define IWLog(...) NSLog(__VA_ARGS__)
+#else
+#define IWLog(...)
+#endif
+
+
+#endif

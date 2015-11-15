@@ -12,7 +12,6 @@
 		2ACCA9901BF85CED00015259 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ACCA98F1BF85CED00015259 /* ViewController.m */; };
 		2ACCA9931BF85CED00015259 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2ACCA9911BF85CED00015259 /* Main.storyboard */; };
 		2ACCA9951BF85CED00015259 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2ACCA9941BF85CED00015259 /* Images.xcassets */; };
-		2ACCA9981BF85CED00015259 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2ACCA9961BF85CED00015259 /* LaunchScreen.xib */; };
 		2ACCA9A41BF85CED00015259 /* SInaWeiBoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ACCA9A31BF85CED00015259 /* SInaWeiBoTests.m */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +26,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2A8E8AA31BF8D414001B617A /* IWWeiBo.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IWWeiBo.pch; sourceTree = "<group>"; };
 		2ACCA9841BF85CEC00015259 /* SInaWeiBo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SInaWeiBo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ACCA9881BF85CED00015259 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2ACCA9891BF85CED00015259 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -36,7 +36,6 @@
 		2ACCA98F1BF85CED00015259 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		2ACCA9921BF85CED00015259 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2ACCA9941BF85CED00015259 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		2ACCA9971BF85CED00015259 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		2ACCA99D1BF85CED00015259 /* SInaWeiBoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SInaWeiBoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ACCA9A21BF85CED00015259 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2ACCA9A31BF85CED00015259 /* SInaWeiBoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SInaWeiBoTests.m; sourceTree = "<group>"; };
@@ -83,11 +82,11 @@
 			children = (
 				2ACCA98B1BF85CED00015259 /* AppDelegate.h */,
 				2ACCA98C1BF85CED00015259 /* AppDelegate.m */,
+				2A8E8AA31BF8D414001B617A /* IWWeiBo.pch */,
 				2ACCA98E1BF85CED00015259 /* ViewController.h */,
 				2ACCA98F1BF85CED00015259 /* ViewController.m */,
 				2ACCA9911BF85CED00015259 /* Main.storyboard */,
 				2ACCA9941BF85CED00015259 /* Images.xcassets */,
-				2ACCA9961BF85CED00015259 /* LaunchScreen.xib */,
 				2ACCA9871BF85CED00015259 /* Supporting Files */,
 			);
 			path = SInaWeiBo;
@@ -163,6 +162,7 @@
 		2ACCA97C1BF85CEC00015259 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = ZY;
 				LastUpgradeCheck = 0620;
 				ORGANIZATIONNAME = "张瑜";
 				TargetAttributes = {
@@ -200,7 +200,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2ACCA9931BF85CED00015259 /* Main.storyboard in Resources */,
-				2ACCA9981BF85CED00015259 /* LaunchScreen.xib in Resources */,
 				2ACCA9951BF85CED00015259 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,14 +251,6 @@
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		2ACCA9961BF85CED00015259 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2ACCA9971BF85CED00015259 /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -286,6 +277,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = "";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -326,6 +318,7 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREFIX_HEADER = "";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -343,6 +336,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SInaWeiBo/IWWeiBo.pch";
 				INFOPLIST_FILE = SInaWeiBo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -353,6 +348,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SInaWeiBo/IWWeiBo.pch";
 				INFOPLIST_FILE = SInaWeiBo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -412,6 +409,7 @@
 				2ACCA9A91BF85CED00015259 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2ACCA9AA1BF85CED00015259 /* Build configuration list for PBXNativeTarget "SInaWeiBoTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +418,7 @@
 				2ACCA9AC1BF85CED00015259 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
