@@ -22,10 +22,18 @@
 #import "DDASLLogger.h"
 #import "DDFileLogger.h"
 
-#define DEBUG
+
+// 自定义log
+#ifdef DEBUG
 static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 #else
 static const int ddLogLevel =LOG_LEVEL_WARN;
 #endif
 
+
+// 定义快速创建颜色宏
+
+#define IWColor(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:255/(255.0)];
+#define   IWRandomColor [UIColor colorWithRed:(arc4random_uniform(255))/255.0 green:(arc4random_uniform(255))/255.0 blue:(arc4random_uniform(255))/255.0 alpha:255/(255.0)];
+#endif
 

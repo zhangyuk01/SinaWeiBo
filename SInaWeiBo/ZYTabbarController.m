@@ -51,22 +51,24 @@
 {
     vc.tabBarItem.title = title;
     vc.tabBarItem.image = [UIImage imageNamed:image];
-    
     // 对被选中的图片进行代码编辑
     UIImage *newimage = [UIImage imageNamed:selectedImage];
     newimage = [newimage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     vc.tabBarItem.selectedImage = newimage;
     //
     [vc.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor orangeColor]} forState:UIControlStateSelected];
-    
-    vc.view.backgroundColor = [UIColor greenColor];
+    // IWRandomColor 是定义在宏中的一个值
+    vc.view.backgroundColor = IWRandomColor;
     return vc;
 }
+
 
 
 - (void)viewDidLoad {
     [super viewDidLoad];
 }
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
