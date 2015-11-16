@@ -10,12 +10,22 @@
 #define SInaWeiBo_IWWeiBo_pch
 
 
-// 自定义log
-#ifdef DEBUG
-#define IWLog(...) NSLog(__VA_ARGS__)
+// 自定义log，入门级的
+//#ifdef DEBUG
+//#define IWLog(...) NSLog(__VA_ARGS__)
+//#else
+//#define IWLog(...)
+//#endif
+
+#import "DDLog.h"
+#import "DDTTYLogger.h"
+#import "DDASLLogger.h"
+#import "DDFileLogger.h"
+
+#define DEBUG
+static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 #else
-#define IWLog(...)
+static const int ddLogLevel =LOG_LEVEL_WARN;
 #endif
 
 
-#endif
