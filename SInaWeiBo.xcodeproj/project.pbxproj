@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2ABA56141BF9EDB700957B10 /* ZYTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ABA56131BF9EDB700957B10 /* ZYTabbarController.m */; };
 		2ACCA98A1BF85CED00015259 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ACCA9891BF85CED00015259 /* main.m */; };
 		2ACCA98D1BF85CED00015259 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ACCA98C1BF85CED00015259 /* AppDelegate.m */; };
 		2ACCA9951BF85CED00015259 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2ACCA9941BF85CED00015259 /* Images.xcassets */; };
@@ -27,6 +28,8 @@
 /* Begin PBXFileReference section */
 		080875D7BD25AEBC05C95E61 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		2A8E8AA31BF8D414001B617A /* IWWeiBo.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IWWeiBo.pch; sourceTree = "<group>"; };
+		2ABA56121BF9EDB700957B10 /* ZYTabbarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYTabbarController.h; sourceTree = "<group>"; };
+		2ABA56131BF9EDB700957B10 /* ZYTabbarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYTabbarController.m; sourceTree = "<group>"; };
 		2ACCA9841BF85CEC00015259 /* SInaWeiBo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SInaWeiBo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ACCA9881BF85CED00015259 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2ACCA9891BF85CED00015259 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -84,6 +87,8 @@
 			children = (
 				2ACCA98B1BF85CED00015259 /* AppDelegate.h */,
 				2ACCA98C1BF85CED00015259 /* AppDelegate.m */,
+				2ABA56121BF9EDB700957B10 /* ZYTabbarController.h */,
+				2ABA56131BF9EDB700957B10 /* ZYTabbarController.m */,
 				2A8E8AA31BF8D414001B617A /* IWWeiBo.pch */,
 				2ACCA9941BF85CED00015259 /* Images.xcassets */,
 				2ACCA9871BF85CED00015259 /* Supporting Files */,
@@ -286,6 +291,7 @@
 			files = (
 				2ACCA98D1BF85CED00015259 /* AppDelegate.m in Sources */,
 				2ACCA98A1BF85CED00015259 /* main.m in Sources */,
+				2ABA56141BF9EDB700957B10 /* ZYTabbarController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
