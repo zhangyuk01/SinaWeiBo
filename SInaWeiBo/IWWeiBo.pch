@@ -23,6 +23,9 @@
 #import "DDFileLogger.h"
 
 
+#import "UIView+Frame.h"
+
+
 // 自定义log
 #ifdef DEBUG
 static const int ddLogLevel = LOG_LEVEL_VERBOSE;
