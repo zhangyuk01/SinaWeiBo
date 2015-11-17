@@ -7,6 +7,7 @@
 //
 
 #import "ZYTabbarController.h"
+#import "ZYTabBar.h"
 
 @interface ZYTabbarController ()
 
@@ -66,6 +67,26 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    // 自定义tabbar
+    // 1. 实例化
+    ZYTabBar *tabbar = [[ZYTabBar alloc] init];
+    DDLogDebug(@"替换前  %@", self.tabBar);
+    // 2.替换 使用self.tabBar = tabbar; 会报错，可以考虑kvc
+    [self setValue:tabbar forKey:@"tabBar"];
+    DDLogDebug(@"替换后 %@",self .tabBar);
+   
+    
+    
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    DDLogDebug(@"-----------start");
+    DDLogDebug(@"%@",self.view.subviews);
+    DDLogDebug(@"------------------");
+    DDLogDebug(@"%@",self.tabBar.subviews);
+
 }
 
 
