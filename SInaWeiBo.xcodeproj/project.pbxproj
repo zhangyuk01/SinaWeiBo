@@ -14,6 +14,7 @@
 		2ACCA9A41BF85CED00015259 /* SInaWeiBoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ACCA9A31BF85CED00015259 /* SInaWeiBoTests.m */; };
 		476B405C1BFACA7D004347AF /* ZYTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 476B405B1BFACA7D004347AF /* ZYTabBar.m */; };
 		476B405F1BFB0826004347AF /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 476B405E1BFB0826004347AF /* UIView+Frame.m */; };
+		476B40621BFB1F91004347AF /* ZYTabbar2.m in Sources */ = {isa = PBXBuildFile; fileRef = 476B40611BFB1F91004347AF /* ZYTabbar2.m */; };
 		BE431C098544C1FEF49073DC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC3C4FBDF7CED670E5CD5265 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +47,8 @@
 		476B405B1BFACA7D004347AF /* ZYTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYTabBar.m; sourceTree = "<group>"; };
 		476B405D1BFB0826004347AF /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
 		476B405E1BFB0826004347AF /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		476B40601BFB1F91004347AF /* ZYTabbar2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYTabbar2.h; sourceTree = "<group>"; };
+		476B40611BFB1F91004347AF /* ZYTabbar2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYTabbar2.m; sourceTree = "<group>"; };
 		BC3C4FBDF7CED670E5CD5265 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -95,6 +98,8 @@
 				2ACCA98C1BF85CED00015259 /* AppDelegate.m */,
 				2ABA56121BF9EDB700957B10 /* ZYTabbarController.h */,
 				2ABA56131BF9EDB700957B10 /* ZYTabbarController.m */,
+				476B40601BFB1F91004347AF /* ZYTabbar2.h */,
+				476B40611BFB1F91004347AF /* ZYTabbar2.m */,
 				476B405A1BFACA7D004347AF /* ZYTabBar.h */,
 				476B405B1BFACA7D004347AF /* ZYTabBar.m */,
 				476B405D1BFB0826004347AF /* UIView+Frame.h */,
@@ -302,6 +307,7 @@
 				476B405C1BFACA7D004347AF /* ZYTabBar.m in Sources */,
 				2ACCA98D1BF85CED00015259 /* AppDelegate.m in Sources */,
 				2ACCA98A1BF85CED00015259 /* main.m in Sources */,
+				476B40621BFB1F91004347AF /* ZYTabbar2.m in Sources */,
 				476B405F1BFB0826004347AF /* UIView+Frame.m in Sources */,
 				2ABA56141BF9EDB700957B10 /* ZYTabbarController.m in Sources */,
 			);
