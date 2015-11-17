@@ -7,6 +7,7 @@
 //
 
 #import "ZYTabbar2.h"
+#import "ZYTabBarButton.h"
 
 @implementation ZYTabbar2
 
@@ -39,8 +40,7 @@
 {
     
     // 创建选项卡按钮
-    UIButton *btn = [[UIButton alloc] init];
-   
+    ZYTabBarButton *btn = [[ZYTabBarButton alloc] init];
     [btn setTitle:item.title forState:UIControlStateNormal];
     [btn  setImage:item.image forState:UIControlStateNormal];
     [btn setImage:item.selectedImage forState:UIControlStateSelected];
