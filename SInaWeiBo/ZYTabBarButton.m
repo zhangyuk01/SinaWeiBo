@@ -30,8 +30,16 @@
 
 - (void) setUp
 {
+    // 设置图片居中
     self.imageView.contentMode = UIViewContentModeCenter;
+    // 设置标题居中
     self.titleLabel.textAlignment = NSTextAlignmentCenter;
+    // 设置文字字体大小
+    self.titleLabel.font = [UIFont systemFontOfSize:13];
+    // 设置按钮标题颜色
+    [self setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [self setTitleColor:[UIColor orangeColor] forState:UIControlStateSelected];
+    
 }
 
 
@@ -55,6 +63,13 @@
     CGFloat titleH = self.height * 0.6;
     
     return  CGRectMake(titleX, titleY, titleW, titleH);
+
+
+}
+
+
+- (void)setHighlighted:(BOOL)highlighted
+{
 
 
 }

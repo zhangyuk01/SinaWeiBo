@@ -35,7 +35,6 @@
         UIViewController *discover = [self addControllerWithClass:[UIViewController class] title:@"发现" image:@"tabbar_discover" selectedImage:@"tabbar_discover_selected"];
         UIViewController *profile = [self addControllerWithClass:[UIViewController class] title:@"我" image:@"tabbar_profile" selectedImage:@"tabbar_profile_selected"];
     }
-    
     return self;
 }
 
@@ -90,7 +89,6 @@
     [self.tabBar removeFromSuperview];
     
    
-    
     
 }
 
