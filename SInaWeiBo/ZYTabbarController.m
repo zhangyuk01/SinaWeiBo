@@ -9,6 +9,10 @@
 #import "ZYTabbarController.h"
 #import "ZYTabBar.h"
 #import "ZYTabbar2.h"
+#import "ZYHomeViewController.h"
+#import "ZYMessageViewController.h"
+#import "ZYProfileViewController.h"
+#import "ZYDiscoverViewController.h"
 
 @interface ZYTabbarController () <ZYTabbarDelegate>
 @property(nonatomic, weak) ZYTabbar2 *customertabBar;
@@ -30,10 +34,10 @@
 {
     if(self = [super initWithNibName:nibBundleOrNil bundle:nibBundleOrNil]) {
         // 5.添加子控制器
-        UIViewController *home = [self addControllerWithClass:[UIViewController class] title:@"首页" image:@"tabbar_home" selectedImage:@"tabbar_home_selected"];
-        UIViewController *message = [self addControllerWithClass:[UIViewController class] title:@"消息" image:@"tabbar_message_center" selectedImage:@"tabbar_message_center_selected"];
-        UIViewController *discover = [self addControllerWithClass:[UIViewController class] title:@"发现" image:@"tabbar_discover" selectedImage:@"tabbar_discover_selected"];
-        UIViewController *profile = [self addControllerWithClass:[UIViewController class] title:@"我" image:@"tabbar_profile" selectedImage:@"tabbar_profile_selected"];
+        UIViewController *home = [self addControllerWithClass:[ZYHomeViewController class] title:@"首页" image:@"tabbar_home" selectedImage:@"tabbar_home_selected"];
+        UIViewController *message = [self addControllerWithClass:[ZYMessageViewController class] title:@"消息" image:@"tabbar_message_center" selectedImage:@"tabbar_message_center_selected"];
+        UIViewController *discover = [self addControllerWithClass:[ZYDiscoverViewController class] title:@"发现" image:@"tabbar_discover" selectedImage:@"tabbar_discover_selected"];
+        UIViewController *profile = [self addControllerWithClass:[ZYProfileViewController class] title:@"我" image:@"tabbar_profile" selectedImage:@"tabbar_profile_selected"];
     }
     return self;
 }
@@ -42,6 +46,7 @@
 - (UIViewController *) addControllerWithClass:(Class)class  title:(NSString *)title image:(NSString *)image selectedImage:(NSString *)selectedImage
 {
     UIViewController *vc = [[class alloc] init];
+   
     return [self addControllerWithController:vc title:title image:image selectedImage:selectedImage];
 }
 
@@ -49,7 +54,11 @@
 // 添加控制器中调用了这个方法
 - (UIViewController *) addControllerWithController:(UIViewController *) vc title:(NSString *) title image:(NSString *) image selectedImage:(NSString *) selectedImage
 {
-    vc.tabBarItem.title = title;
+    
+    //vc.tabBarItem.title = title;
+    // 通过下面这种方式可以直接设置导航栏和选项卡两项
+    vc.title = title;
+    
     vc.tabBarItem.image = [UIImage imageNamed:image];
     // 对被选中的图片进行代码编辑
     UIImage *newimage = [UIImage imageNamed:selectedImage];
@@ -60,7 +69,10 @@
     // IWRandomColor 是定义在宏中的一个值
     vc.view.backgroundColor = IWRandomColor;
     
-    [self addChildViewController:vc];
+    // 创建导航栏
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+    
+    [self addChildViewController:nav];
     [self.customertabBar addItem: vc.tabBarItem];
     return vc;
 }

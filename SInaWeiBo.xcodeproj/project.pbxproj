@@ -12,6 +12,10 @@
 		2ACCA98D1BF85CED00015259 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ACCA98C1BF85CED00015259 /* AppDelegate.m */; };
 		2ACCA9951BF85CED00015259 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2ACCA9941BF85CED00015259 /* Images.xcassets */; };
 		2ACCA9A41BF85CED00015259 /* SInaWeiBoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ACCA9A31BF85CED00015259 /* SInaWeiBoTests.m */; };
+		2AFD5FB31C1DC330007E7F14 /* ZYMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFD5FB21C1DC330007E7F14 /* ZYMessageViewController.m */; };
+		2AFD5FB61C1DC348007E7F14 /* ZYProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFD5FB51C1DC348007E7F14 /* ZYProfileViewController.m */; };
+		2AFD5FB91C1DC35E007E7F14 /* ZYDiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFD5FB81C1DC35E007E7F14 /* ZYDiscoverViewController.m */; };
+		2AFD5FBC1C1DC37A007E7F14 /* ZYHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFD5FBB1C1DC37A007E7F14 /* ZYHomeViewController.m */; };
 		476B405C1BFACA7D004347AF /* ZYTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 476B405B1BFACA7D004347AF /* ZYTabBar.m */; };
 		476B405F1BFB0826004347AF /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 476B405E1BFB0826004347AF /* UIView+Frame.m */; };
 		476B40621BFB1F91004347AF /* ZYTabbar2.m in Sources */ = {isa = PBXBuildFile; fileRef = 476B40611BFB1F91004347AF /* ZYTabbar2.m */; };
@@ -43,6 +47,14 @@
 		2ACCA99D1BF85CED00015259 /* SInaWeiBoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SInaWeiBoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ACCA9A21BF85CED00015259 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2ACCA9A31BF85CED00015259 /* SInaWeiBoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SInaWeiBoTests.m; sourceTree = "<group>"; };
+		2AFD5FB11C1DC330007E7F14 /* ZYMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYMessageViewController.h; sourceTree = "<group>"; };
+		2AFD5FB21C1DC330007E7F14 /* ZYMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYMessageViewController.m; sourceTree = "<group>"; };
+		2AFD5FB41C1DC348007E7F14 /* ZYProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYProfileViewController.h; sourceTree = "<group>"; };
+		2AFD5FB51C1DC348007E7F14 /* ZYProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYProfileViewController.m; sourceTree = "<group>"; };
+		2AFD5FB71C1DC35E007E7F14 /* ZYDiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYDiscoverViewController.h; sourceTree = "<group>"; };
+		2AFD5FB81C1DC35E007E7F14 /* ZYDiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYDiscoverViewController.m; sourceTree = "<group>"; };
+		2AFD5FBA1C1DC37A007E7F14 /* ZYHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYHomeViewController.h; sourceTree = "<group>"; };
+		2AFD5FBB1C1DC37A007E7F14 /* ZYHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYHomeViewController.m; sourceTree = "<group>"; };
 		467752EE377832124F26EDAE /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		476B405A1BFACA7D004347AF /* ZYTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYTabBar.h; sourceTree = "<group>"; };
 		476B405B1BFACA7D004347AF /* ZYTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYTabBar.m; sourceTree = "<group>"; };
@@ -97,18 +109,7 @@
 		2ACCA9861BF85CEC00015259 /* SInaWeiBo */ = {
 			isa = PBXGroup;
 			children = (
-				2ACCA98B1BF85CED00015259 /* AppDelegate.h */,
-				2ACCA98C1BF85CED00015259 /* AppDelegate.m */,
-				2ABA56121BF9EDB700957B10 /* ZYTabbarController.h */,
-				2ABA56131BF9EDB700957B10 /* ZYTabbarController.m */,
-				476B40601BFB1F91004347AF /* ZYTabbar2.h */,
-				476B40611BFB1F91004347AF /* ZYTabbar2.m */,
-				476B40631BFB3776004347AF /* ZYTabBarButton.h */,
-				476B40641BFB3776004347AF /* ZYTabBarButton.m */,
-				476B405A1BFACA7D004347AF /* ZYTabBar.h */,
-				476B405B1BFACA7D004347AF /* ZYTabBar.m */,
-				476B405D1BFB0826004347AF /* UIView+Frame.h */,
-				476B405E1BFB0826004347AF /* UIView+Frame.m */,
+				2AFD5F951C1DC06F007E7F14 /* classes */,
 				2A8E8AA31BF8D414001B617A /* IWWeiBo.pch */,
 				2ACCA9941BF85CED00015259 /* Images.xcassets */,
 				2ACCA9871BF85CED00015259 /* Supporting Files */,
@@ -140,6 +141,217 @@
 				2ACCA9A21BF85CED00015259 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2AFD5F951C1DC06F007E7F14 /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				2AFD5FAB1C1DC1F6007E7F14 /* message */,
+				2AFD5F9B1C1DC0BF007E7F14 /* other */,
+				2AFD5F9A1C1DC0B9007E7F14 /* main */,
+				2AFD5F991C1DC099007E7F14 /* profile */,
+				2AFD5F981C1DC093007E7F14 /* discover */,
+				2AFD5F961C1DC077007E7F14 /* home */,
+			);
+			name = classes;
+			sourceTree = "<group>";
+		};
+		2AFD5F961C1DC077007E7F14 /* home */ = {
+			isa = PBXGroup;
+			children = (
+				2AFD5FA71C1DC145007E7F14 /* controller */,
+				2AFD5FA61C1DC140007E7F14 /* view */,
+				2AFD5FA51C1DC138007E7F14 /* model */,
+			);
+			name = home;
+			sourceTree = "<group>";
+		};
+		2AFD5F981C1DC093007E7F14 /* discover */ = {
+			isa = PBXGroup;
+			children = (
+				2AFD5FA11C1DC114007E7F14 /* controller */,
+				2AFD5FA01C1DC108007E7F14 /* view */,
+				2AFD5F9F1C1DC0FE007E7F14 /* model */,
+			);
+			name = discover;
+			sourceTree = "<group>";
+		};
+		2AFD5F991C1DC099007E7F14 /* profile */ = {
+			isa = PBXGroup;
+			children = (
+				2AFD5F9E1C1DC0F1007E7F14 /* controller */,
+				2AFD5F9D1C1DC0EA007E7F14 /* view */,
+				2AFD5F9C1C1DC0DF007E7F14 /* model */,
+			);
+			name = profile;
+			sourceTree = "<group>";
+		};
+		2AFD5F9A1C1DC0B9007E7F14 /* main */ = {
+			isa = PBXGroup;
+			children = (
+				2AFD5FB01C1DC28D007E7F14 /* libs */,
+				2AFD5FAF1C1DC22F007E7F14 /* category */,
+				2AFD5FAA1C1DC19A007E7F14 /* controller */,
+				2AFD5FA91C1DC192007E7F14 /* view */,
+				2AFD5FA81C1DC18A007E7F14 /* model */,
+			);
+			name = main;
+			sourceTree = "<group>";
+		};
+		2AFD5F9B1C1DC0BF007E7F14 /* other */ = {
+			isa = PBXGroup;
+			children = (
+				2ACCA98B1BF85CED00015259 /* AppDelegate.h */,
+				2ACCA98C1BF85CED00015259 /* AppDelegate.m */,
+			);
+			name = other;
+			sourceTree = "<group>";
+		};
+		2AFD5F9C1C1DC0DF007E7F14 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		2AFD5F9D1C1DC0EA007E7F14 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		2AFD5F9E1C1DC0F1007E7F14 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				2AFD5FB41C1DC348007E7F14 /* ZYProfileViewController.h */,
+				2AFD5FB51C1DC348007E7F14 /* ZYProfileViewController.m */,
+			);
+			name = controller;
+			sourceTree = "<group>";
+		};
+		2AFD5F9F1C1DC0FE007E7F14 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		2AFD5FA01C1DC108007E7F14 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		2AFD5FA11C1DC114007E7F14 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				2AFD5FB71C1DC35E007E7F14 /* ZYDiscoverViewController.h */,
+				2AFD5FB81C1DC35E007E7F14 /* ZYDiscoverViewController.m */,
+			);
+			name = controller;
+			sourceTree = "<group>";
+		};
+		2AFD5FA51C1DC138007E7F14 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		2AFD5FA61C1DC140007E7F14 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		2AFD5FA71C1DC145007E7F14 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				2AFD5FBA1C1DC37A007E7F14 /* ZYHomeViewController.h */,
+				2AFD5FBB1C1DC37A007E7F14 /* ZYHomeViewController.m */,
+			);
+			name = controller;
+			sourceTree = "<group>";
+		};
+		2AFD5FA81C1DC18A007E7F14 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		2AFD5FA91C1DC192007E7F14 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				476B405A1BFACA7D004347AF /* ZYTabBar.h */,
+				476B405B1BFACA7D004347AF /* ZYTabBar.m */,
+				476B40601BFB1F91004347AF /* ZYTabbar2.h */,
+				476B40611BFB1F91004347AF /* ZYTabbar2.m */,
+				476B40631BFB3776004347AF /* ZYTabBarButton.h */,
+				476B40641BFB3776004347AF /* ZYTabBarButton.m */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		2AFD5FAA1C1DC19A007E7F14 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				2ABA56121BF9EDB700957B10 /* ZYTabbarController.h */,
+				2ABA56131BF9EDB700957B10 /* ZYTabbarController.m */,
+			);
+			name = controller;
+			sourceTree = "<group>";
+		};
+		2AFD5FAB1C1DC1F6007E7F14 /* message */ = {
+			isa = PBXGroup;
+			children = (
+				2AFD5FAE1C1DC209007E7F14 /* controller */,
+				2AFD5FAD1C1DC204007E7F14 /* view */,
+				2AFD5FAC1C1DC1FD007E7F14 /* model */,
+			);
+			name = message;
+			sourceTree = "<group>";
+		};
+		2AFD5FAC1C1DC1FD007E7F14 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		2AFD5FAD1C1DC204007E7F14 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		2AFD5FAE1C1DC209007E7F14 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				2AFD5FB11C1DC330007E7F14 /* ZYMessageViewController.h */,
+				2AFD5FB21C1DC330007E7F14 /* ZYMessageViewController.m */,
+			);
+			name = controller;
+			sourceTree = "<group>";
+		};
+		2AFD5FAF1C1DC22F007E7F14 /* category */ = {
+			isa = PBXGroup;
+			children = (
+				476B405D1BFB0826004347AF /* UIView+Frame.h */,
+				476B405E1BFB0826004347AF /* UIView+Frame.m */,
+			);
+			name = category;
+			sourceTree = "<group>";
+		};
+		2AFD5FB01C1DC28D007E7F14 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = libs;
 			sourceTree = "<group>";
 		};
 		69CFAEC0FD4BCD481D81B9F1 /* Pods */ = {
@@ -309,10 +521,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AFD5FBC1C1DC37A007E7F14 /* ZYHomeViewController.m in Sources */,
 				476B40651BFB3776004347AF /* ZYTabBarButton.m in Sources */,
 				476B405C1BFACA7D004347AF /* ZYTabBar.m in Sources */,
 				2ACCA98D1BF85CED00015259 /* AppDelegate.m in Sources */,
+				2AFD5FB61C1DC348007E7F14 /* ZYProfileViewController.m in Sources */,
+				2AFD5FB31C1DC330007E7F14 /* ZYMessageViewController.m in Sources */,
 				2ACCA98A1BF85CED00015259 /* main.m in Sources */,
+				2AFD5FB91C1DC35E007E7F14 /* ZYDiscoverViewController.m in Sources */,
 				476B40621BFB1F91004347AF /* ZYTabbar2.m in Sources */,
 				476B405F1BFB0826004347AF /* UIView+Frame.m in Sources */,
 				2ABA56141BF9EDB700957B10 /* ZYTabbarController.m in Sources */,
