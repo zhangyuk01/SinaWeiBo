@@ -10,7 +10,7 @@
 #import "ZYTabBar.h"
 #import "ZYTabbar2.h"
 
-@interface ZYTabbarController ()
+@interface ZYTabbarController () <ZYTabbarDelegate>
 @property(nonatomic, weak) ZYTabbar2 *customertabBar;
 @end
 
@@ -80,6 +80,8 @@
    
     // 1.创建自定义
     ZYTabbar2 *tabbar2 = [[ZYTabbar2 alloc] init];
+      // 设置代理
+    tabbar2.delegate = self;
     // 2.frame 设置
     tabbar2.frame = self.tabBar.frame;
     // 3.添加到父控件
@@ -98,6 +100,17 @@
     DDLogDebug(@"%@",self.view.subviews);
     DDLogDebug(@"------------------");
     DDLogDebug(@"%@",self.tabBar.subviews);
+
+}
+
+#pragma mark - Delegate
+- (void)tabBar:(ZYTabbar2 *)tabBar selectedBtnFrom:(NSInteger)from to:(NSInteger)to
+{
+    NSLog(@"from = %tu, to = %tu",from,to);
+    // 切换控制器
+//    UIViewController *currentCon = self.childViewControllers[to];
+//    self.selectedViewController= currentCon;
+    self.selectedIndex = to;
 
 }
 

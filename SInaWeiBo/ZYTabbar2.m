@@ -11,11 +11,27 @@
 
 @interface ZYTabbar2 ()
 @property(nonatomic, strong) ZYTabBarButton *currentButton;
+/**
+  用户存储所有的选项卡
+ */
+@property(nonatomic, strong) NSMutableArray *btns;
 @property(nonatomic, weak) UIButton *plusBtn;
 @end
 
 
+
+
 @implementation ZYTabbar2
+
+// 懒加载
+- (NSMutableArray *)btns
+{
+    if (!_btns) {
+        _btns = [NSMutableArray array];
+    }
+    return _btns;
+}
+
 - (id)initWithCoder:(NSCoder *)aDecoder
 {
     self = [super initWithCoder:aDecoder];
@@ -66,17 +82,44 @@
     [btn setImage:item.selectedImage forState:UIControlStateSelected];
     [btn addTarget:self action:@selector(btnOnClick:) forControlEvents:UIControlEventTouchDown];
     [self addSubview:btn];
+  
+    btn.tag = self.btns.count;
+    [self.btns addObject:btn];
+    
+    
+    if (self.btns.count == 1) {
+        [self btnOnClick:btn];
+    }
    
 }
 
 
 - (void) btnOnClick:(ZYTabBarButton *)btn
 {
+    // 2. 切换控制器
+    if ([self.delegate respondsToSelector:@selector(tabBar:selectedBtnFrom:to:)]) {
+        [self.delegate tabBar:self selectedBtnFrom:self.currentButton.tag to:btn.tag];
+    }
     // 1. 设置切换按钮的状态
     self.currentButton.selected = NO;
     btn.selected = YES;
     self.currentButton = btn;
-    // 2. 切换控制器
+    
+    // 3.让选中的btn缩小放大还原
+    [UIView animateWithDuration:0.2 animations:^{
+        // 先缩小
+        btn.transform = CGAffineTransformMakeScale(0.5, 0.5);
+      }completion: ^(BOOL finished){
+          // 再放大
+          [UIView animateWithDuration:0.1 animations:^{
+             btn.transform = CGAffineTransformMakeScale(1.5, 0.5);
+          } completion:^(BOOL finished){
+              [UIView animateWithDuration:0.1 animations:^{
+                  btn.transform = CGAffineTransformIdentity;
+              }];
+           }];
+          
+      }];
 }
 
 
@@ -86,9 +129,6 @@
     NSUInteger index = 0;
     for (UIView *child in self.subviews) {
         if (child.tag != 998) {
-           if ( index == 0) {
-               [self btnOnClick:(ZYTabBarButton *)child];
-            }
             CGFloat childW = self.frame.size.width / 5;
             CGFloat childH = self.frame.size.height;
             CGFloat childX = index*childW;

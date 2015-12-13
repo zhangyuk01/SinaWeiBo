@@ -28,15 +28,23 @@
     DDLogVerbose(@"%s",__func__);
         3.自定义颜色
     [[DDTTYLogger sharedInstance]  setForegroundColor:[UIColor greenColor] backgroundColor:[UIColor purpleColor] forFlag:DDLogFlagInfo];
-    
      */
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor redColor];
     
+    
     // 4.创建根控制器
     ZYTabbarController *tb = [[ZYTabbarController alloc] init];
     self.window.rootViewController = tb;
+   
+    
+    NSLog(@"-------------lalala-------");
+    UITabBarController *tabco = [[UITabBarController alloc] init];
+    NSLog(@"%@",tabco.view.subviews);
+    NSLog(@"===============");
+    NSLog(@"%@",tabco.view);
+    NSLog(@"-------------alalala------");
     
     [self.window makeKeyAndVisible];
     return YES;
