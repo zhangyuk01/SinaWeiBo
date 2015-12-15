@@ -46,6 +46,15 @@
     NSLog(@"%@",tabco.view);
     NSLog(@"-------------alalala------");
     
+    
+    NSLog(@"sssssssssssssssssss");
+    UINavigationController *nvc = [[UINavigationController alloc] init];
+    NSLog(@"%@",nvc.view);
+    NSLog(@"sssssssssssssssssss");
+    UINavigationBar *nab = [nvc.view.subviews lastObject];
+    NSLog(@"%@",nab.subviews);
+    NSLog(@"ssssssssssssssssss");
+    
     [self.window makeKeyAndVisible];
     return YES;
 }

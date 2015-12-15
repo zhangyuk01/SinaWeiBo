@@ -16,17 +16,41 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+   
+    // 创建leftbarbuttonitem
+    self.navigationItem.leftBarButtonItem = [self itemWithImage:@"navigationbar_friendsearch" action:@selector(friendSearch) highImage:@"navigationbar_friendsearch_highlighted"];
+   
+    // 创建右边的button
+    self.navigationItem.rightBarButtonItem = [self itemWithImage:@"navigationbar_pop" action:@selector(scan) highImage:@"navigationbar_pop_highlighted"];
     
-    //  初始化导航条，创建左边和右边的按钮
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"navigationbar_friendsearch"] style:UIBarButtonItemStylePlain target:nil action:nil];
     
+}
+
+- (void) friendSearch{
+
+}
+
+- (void) scan{
+}
+
+
+// 抽取方法，创建navigationItem上面的left 和 right
+- (UIBarButtonItem *) itemWithImage:(NSString *) image action:(SEL)action highImage:(NSString *)highImage{
+    UIButton *btn = [[UIButton alloc] init];
+    [btn setImage:[UIImage imageNamed:image] forState:UIControlStateNormal];
+    [btn setImage:[UIImage imageNamed:highImage] forState:UIControlStateHighlighted];
+    // 给btn添加一个位置 比较特殊
+    btn.size = btn.currentImage.size;
+    // 给btn 添加点击事件,但是不能处理点击事件的方法都相同吧，所以可以穿进来一个方法
+    [btn addTarget:self action:action forControlEvents:UIControlEventTouchUpInside];
+    
+    return [[UIBarButtonItem alloc] initWithCustomView:btn];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
 
-#pragma mark - Table view data source
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 0;
 }
