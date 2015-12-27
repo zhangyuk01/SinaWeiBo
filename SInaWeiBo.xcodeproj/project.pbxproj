@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A52DAB41C21A8D200A6DD55 /* ZYTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A52DAB31C21A8D200A6DD55 /* ZYTool.m */; };
+		2A52DAB71C21ADD300A6DD55 /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A52DAB61C21ADD300A6DD55 /* UIBarButtonItem+Extension.m */; };
+		2A7AECCA1C2FA39300D72980 /* ZYTitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7AECC91C2FA39300D72980 /* ZYTitleButton.m */; };
+		2A8ACB941C26B28300BE976A /* ZYScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A8ACB931C26B28300BE976A /* ZYScanViewController.m */; };
+		2A8ACB961C26B30600BE976A /* ZYScanViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A8ACB951C26B30600BE976A /* ZYScanViewController.storyboard */; };
+		2A8ACB991C26BCBF00BE976A /* ZYQrcodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A8ACB981C26BCBF00BE976A /* ZYQrcodeViewController.m */; };
+		2A8ACB9C1C26BCE100BE976A /* ZYBarCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A8ACB9B1C26BCE100BE976A /* ZYBarCodeViewController.m */; };
 		2ABA56141BF9EDB700957B10 /* ZYTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ABA56131BF9EDB700957B10 /* ZYTabbarController.m */; };
 		2ACCA98A1BF85CED00015259 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ACCA9891BF85CED00015259 /* main.m */; };
 		2ACCA98D1BF85CED00015259 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ACCA98C1BF85CED00015259 /* AppDelegate.m */; };
@@ -35,6 +42,19 @@
 
 /* Begin PBXFileReference section */
 		080875D7BD25AEBC05C95E61 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		2A52DAB21C21A8D200A6DD55 /* ZYTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZYTool.h; path = Images.xcassets/ZYTool.h; sourceTree = "<group>"; };
+		2A52DAB31C21A8D200A6DD55 /* ZYTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZYTool.m; path = Images.xcassets/ZYTool.m; sourceTree = "<group>"; };
+		2A52DAB51C21ADD300A6DD55 /* UIBarButtonItem+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extension.h"; sourceTree = "<group>"; };
+		2A52DAB61C21ADD300A6DD55 /* UIBarButtonItem+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extension.m"; sourceTree = "<group>"; };
+		2A7AECC81C2FA39300D72980 /* ZYTitleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYTitleButton.h; sourceTree = "<group>"; };
+		2A7AECC91C2FA39300D72980 /* ZYTitleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYTitleButton.m; sourceTree = "<group>"; };
+		2A8ACB921C26B28300BE976A /* ZYScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYScanViewController.h; sourceTree = "<group>"; };
+		2A8ACB931C26B28300BE976A /* ZYScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYScanViewController.m; sourceTree = "<group>"; };
+		2A8ACB951C26B30600BE976A /* ZYScanViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ZYScanViewController.storyboard; sourceTree = "<group>"; };
+		2A8ACB971C26BCBF00BE976A /* ZYQrcodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYQrcodeViewController.h; sourceTree = "<group>"; };
+		2A8ACB981C26BCBF00BE976A /* ZYQrcodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYQrcodeViewController.m; sourceTree = "<group>"; };
+		2A8ACB9A1C26BCE100BE976A /* ZYBarCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYBarCodeViewController.h; sourceTree = "<group>"; };
+		2A8ACB9B1C26BCE100BE976A /* ZYBarCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYBarCodeViewController.m; sourceTree = "<group>"; };
 		2A8E8AA31BF8D414001B617A /* IWWeiBo.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IWWeiBo.pch; sourceTree = "<group>"; };
 		2ABA56121BF9EDB700957B10 /* ZYTabbarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYTabbarController.h; sourceTree = "<group>"; };
 		2ABA56131BF9EDB700957B10 /* ZYTabbarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYTabbarController.m; sourceTree = "<group>"; };
@@ -86,6 +106,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A52DAB11C21A89100A6DD55 /* tool */ = {
+			isa = PBXGroup;
+			children = (
+				2A52DAB21C21A8D200A6DD55 /* ZYTool.h */,
+				2A52DAB31C21A8D200A6DD55 /* ZYTool.m */,
+			);
+			name = tool;
+			sourceTree = "<group>";
+		};
 		2ACCA97B1BF85CEC00015259 = {
 			isa = PBXGroup;
 			children = (
@@ -189,6 +218,7 @@
 		2AFD5F9A1C1DC0B9007E7F14 /* main */ = {
 			isa = PBXGroup;
 			children = (
+				2A52DAB11C21A89100A6DD55 /* tool */,
 				2AFD5FB01C1DC28D007E7F14 /* libs */,
 				2AFD5FAF1C1DC22F007E7F14 /* category */,
 				2AFD5FAA1C1DC19A007E7F14 /* controller */,
@@ -263,6 +293,8 @@
 		2AFD5FA61C1DC140007E7F14 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				2A7AECC81C2FA39300D72980 /* ZYTitleButton.h */,
+				2A7AECC91C2FA39300D72980 /* ZYTitleButton.m */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -272,6 +304,10 @@
 			children = (
 				2AFD5FBA1C1DC37A007E7F14 /* ZYHomeViewController.h */,
 				2AFD5FBB1C1DC37A007E7F14 /* ZYHomeViewController.m */,
+				2A8ACB971C26BCBF00BE976A /* ZYQrcodeViewController.h */,
+				2A8ACB981C26BCBF00BE976A /* ZYQrcodeViewController.m */,
+				2A8ACB9A1C26BCE100BE976A /* ZYBarCodeViewController.h */,
+				2A8ACB9B1C26BCE100BE976A /* ZYBarCodeViewController.m */,
 			);
 			name = controller;
 			sourceTree = "<group>";
@@ -301,6 +337,9 @@
 			children = (
 				2ABA56121BF9EDB700957B10 /* ZYTabbarController.h */,
 				2ABA56131BF9EDB700957B10 /* ZYTabbarController.m */,
+				2A8ACB921C26B28300BE976A /* ZYScanViewController.h */,
+				2A8ACB931C26B28300BE976A /* ZYScanViewController.m */,
+				2A8ACB951C26B30600BE976A /* ZYScanViewController.storyboard */,
 			);
 			name = controller;
 			sourceTree = "<group>";
@@ -343,6 +382,8 @@
 			children = (
 				476B405D1BFB0826004347AF /* UIView+Frame.h */,
 				476B405E1BFB0826004347AF /* UIView+Frame.m */,
+				2A52DAB51C21ADD300A6DD55 /* UIBarButtonItem+Extension.h */,
+				2A52DAB61C21ADD300A6DD55 /* UIBarButtonItem+Extension.m */,
 			);
 			name = category;
 			sourceTree = "<group>";
@@ -456,6 +497,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2ACCA9951BF85CED00015259 /* Images.xcassets in Resources */,
+				2A8ACB961C26B30600BE976A /* ZYScanViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -525,13 +567,19 @@
 				476B40651BFB3776004347AF /* ZYTabBarButton.m in Sources */,
 				476B405C1BFACA7D004347AF /* ZYTabBar.m in Sources */,
 				2ACCA98D1BF85CED00015259 /* AppDelegate.m in Sources */,
+				2A8ACB941C26B28300BE976A /* ZYScanViewController.m in Sources */,
+				2A7AECCA1C2FA39300D72980 /* ZYTitleButton.m in Sources */,
 				2AFD5FB61C1DC348007E7F14 /* ZYProfileViewController.m in Sources */,
+				2A8ACB9C1C26BCE100BE976A /* ZYBarCodeViewController.m in Sources */,
 				2AFD5FB31C1DC330007E7F14 /* ZYMessageViewController.m in Sources */,
 				2ACCA98A1BF85CED00015259 /* main.m in Sources */,
 				2AFD5FB91C1DC35E007E7F14 /* ZYDiscoverViewController.m in Sources */,
+				2A52DAB41C21A8D200A6DD55 /* ZYTool.m in Sources */,
 				476B40621BFB1F91004347AF /* ZYTabbar2.m in Sources */,
+				2A52DAB71C21ADD300A6DD55 /* UIBarButtonItem+Extension.m in Sources */,
 				476B405F1BFB0826004347AF /* UIView+Frame.m in Sources */,
 				2ABA56141BF9EDB700957B10 /* ZYTabbarController.m in Sources */,
+				2A8ACB991C26BCBF00BE976A /* ZYQrcodeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
